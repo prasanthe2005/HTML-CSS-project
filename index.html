@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <script src="https://kit.fontawesome.com/4feea25559.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+    
+    .left
+    {
+        width:200px;
+        float: left;
+    }
+    .fa-bolt
+    {   
+        background-color:blueviolet;
+        border-radius: 10px;
+        padding:10px;
+        color:white;
+        font-size: small;
+    }
+
+    .div1
+    {
+        display: flex;
+        gap: 1rem;
+    
+    }
+    .div2
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+    .div3
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top:7px;
+    }
+    .div4
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top:7px;
+       
+    }
+    .div5
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top:7px;
+    }
+    .div6
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top:10px;
+    }
+    .div7
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top:20px;
+    }
+    .div8
+    {
+        display: flex;
+        gap: 1rem;
+        margin-top:10px;
+    }
+    .div9{
+        float:left;
+        width:180px;
+       
+    }
+    .div2:hover {
+        background-color:white;
+        border-radius:10px;
+        padding:10px;
+        color:blue;
+    }
+    .div3:hover {
+        background-color: white;
+        border-radius:10px;
+        padding:10px;
+        color:blue;
+
+    }
+    .div4:hover {
+        background-color: white;
+        border-radius:10px;
+        padding:10px;
+        color:blue;
+    }
+    .div5:hover {
+        background-color: white;
+        border-radius:10px;
+        padding:10px;
+        color:blue;
+    }
+    .div6:hover {
+        background-color: white;
+        border-radius:10px;
+        padding:10px;
+        color:blue;
+    }
+    .div7:hover {
+        background-color: white;
+        border-radius:10px;
+        padding:10px;
+        color:blue;
+    }
+    .div8:hover {
+        background-color: white;
+        border-radius:10px;
+        padding:10px;
+        color:blue;
+    }
+    .background{
+        height:730px;
+        width:200px;
+        background-color:white;
+        border-radius:6px;
+        padding-left:20px;
+    }
+    .but1{
+        display:flex;
+        margin-left:60px;
+        width:24px;
+        border-radius: 10px;
+        height:20px;
+        padding-left: 7px;
+        padding-top:3px;
+        color:white;
+        background:blue;
+        text-align: center;
+        border: none;
+    }
+    .but2{
+        display:flex;
+        margin-left: 30px;
+        width:30px;
+        padding-left: 7px;
+        padding-top:3px;
+        border-radius: 10px;
+        height:20px;
+        color:red;
+        background:light red;
+        text-align: center;
+        border: none;
+    }
+    .profile{
+        border-radius: 100%;
+    }
+    .image{
+        border-radius: 100%;
+        width:50px;
+        height: 50px;
+        margin-left:58px;
+        margin-top: -5px;
+    
+        
+    }
+    .marie{
+        margin-top:-4px;
+    }
+    .fa-pencil-square-o{
+        display: flex;
+        margin-top: 15px;
+    }
+    .fa-check{
+        display: flex;
+        margin-top: 16px;
+        background-color:rgb(15, 233, 15);
+        border-radius: 5px;
+        width: 15px;
+        color: white;
+        height: 18px;;
+      
+    }
+    .one{
+        display: flex;
+        margin-left:-10px;
+        font-size: smaller;
+        margin-top:17px;
+        color: gray;
+    }
+    .two{
+        display: flex;
+        margin-left:-10px;
+        font-size: smaller;
+        margin-top: 17px;
+        color: green;
+    }
+    .first{
+        background-color:white;
+        display: flex;
+        gap: 1rem;
+        display: grid;
+        padding:20px;
+        border-radius: 15px;
+        height:40px;
+        width:1005px;
+    
+    
+    }
+    .edit{
+        
+        display: flex;
+        gap: 1rem;
+        margin-left:-10px;
+        margin-top:-1px;
+       
+        
+    }
+    .edit1{
+        margin-top:12px;
+        display: flex;
+        gap:1rem;
+        margin-left:-140px;
+      
+    }
+    .b1{
+        display:flex;
+        width:120px;
+        border-radius: 5px;
+        height:20px;
+        margin-right:- 90px;
+        color:black;
+        margin-left:55%;
+        justify-content: center;
+        padding:13px;
+        margin-top: 2%;
+        align-items: center;
+    }
+    .b2{
+        display:flex;
+        float: right;
+        justify-content: center;
+        width:120px;
+        background-color: blue;
+        border-radius: 5px;
+        height:1px;
+        color:white;
+        margin-top: -30px;
+        padding:13px;
+        align-items: center; 
+        gap: 20%;
+    }
+    .one1{
+       
+        margin-left:400px;
+        margin-top:-80px;
+    }
+    .image1{
+        width:200px;
+        height: 200px;
+    }
+    .card{
+        background-image: url(https://wallpaperset.com/w/full/a/5/9/96886.jpg);
+        width:290px;
+        height:fit-content;
+        display:inline-block;
+        border-radius:20px ;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+        border:none;
+        padding-left:29px;
+        padding-bottom: -25px;
+        margin-top:-5px;
+        margin-left:60px
+        
+
+    }
+   
+    .letter1
+    {
+       margin-top: -12px;
+
+    }
+    .letter2
+    {
+       margin-top:-1px;
+       margin-bottom: 12px;
+       border-radius: 5px;
+       border: none;
+       padding: 4px;
+
+    }
+    .small{
+        width: 290px;
+        border-radius:10px ;
+        box-sizing: border-box;
+        color:black;
+        padding-left:60px;
+        padding-bottom: -25px;
+        margin-top:15px;
+        margin-right:100px;
+        display: flex;
+        gap: 2%;
+        margin-left:60px;
+        background-color:white;
+        height:72px;
+
+        
+
+    }
+    .container{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction:column;
+        margin-top:25px;
+    }
+    .api{
+        font-size:13px;
+        color:gray;
+        margin-left:10px;
+    }
+    .number{
+        margin-top:-13px;
+        font-weight: bold;
+        margin-left:10px;
+    }
+    .big{
+        width:290px;
+        border-radius:20px ;
+        background-color:white ;
+        color:black;
+        margin-left:370px;
+        margin-top: -250px;
+        display: flex;
+        flex-direction: column;
+        height:fit-content;
+        padding: 5px;
+       
+    }
+    .you{
+       width: auto;
+        font-size: 13px;
+        color:gray;
+        font-weight:bold;
+        margin: 0;
+    }
+    .developer{
+        display: block;
+        width:auto;
+        font-weight: bold;
+        margin: 0;
+        
+    } 
+    .number1{
+        width:auto;
+        padding-left: 120px;
+         
+    }
+    .big1{
+        display: flex;
+        gap:60px;
+         
+    }
+    .num{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .big1 p{
+        margin: 0;
+
+    }
+    .num1{
+        display: flex;
+        
+    }
+
+        
+    
+    .bu1{
+        width:120px;
+        border-radius: 7px;
+        padding:6px;
+    }
+    .bu2{
+        width:100px;
+        border-radius: 7px;
+        padding:6px;
+        background-color: blue;
+
+
+    }
+    .fa-check{
+        
+        font-size: small;
+        padding-top: 3px;
+        
+    }
+   .users{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:-45px;
+    
+   }
+   .support1{
+    display: flex;
+    margin-left: -20px;
+   }
+   .support{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:-60px;
+
+
+   }
+   .small1{
+        width: 300px;
+        height:72px;
+        border-radius:10px ;
+        box-sizing: border-box;
+        color:black;
+        padding-left:60px;
+        padding-bottom: -25px;
+        margin-top:12px;
+        margin-left:370px;
+        background-color:white;
+    
+   }
+   .side{
+        position: absolute;
+        width:290px;
+        box-sizing: border-box;
+        background-color: white;
+        right:66px;
+        top: 230px;
+        padding: 100px;
+        margin-top: -117px;
+        border-radius:15px;  
+        height:250px;
+
+   }
+   .payment1{
+   
+    display: flex;
+        gap: 120px;
+
+   }
+   .payment{
+    margin-left: -75px;
+    margin-top:-100px;
+    font-weight:bold;
+    padding: 10px;
+    width:200px;
+    font-weight:bold;
+    padding: 10px;
+   
+
+   }
+   .big2{
+    display: grid;
+        gap:50px;
+        margin: 0;
+
+   }
+   .edits{
+     margin-top: -90px;
+     margin-left:-130px;
+     color: blue;
+   }
+   .visa{
+        border:black solid 2px;
+        margin-top:-110px;
+        margin-left: -70px;
+        height:70px;
+        width:220px;
+        border-radius: 10px;
+        background-color:rgb(245, 245, 245);
+        border: none;
+        
+
+   }
+   .visadeatials{
+    margin-left: 80px;
+    margin-top: -60px;
+   
+   }
+   .mastercard{
+        border:black solid 2px;
+        margin-top:-80px;
+        margin-left: -70px;
+        height:70px;
+        width:220px;
+        border-radius: 10px;
+        background-color:rgb(245, 245, 245);
+        border: none;
+
+   }
+   .mastercarddeatials{
+    margin-left: 80px;
+    margin-top: -60px;
+
+   }
+   .mastercardimage{
+    width:65px;
+    height: 40px;
+    margin-top:7px;
+    padding: 5px;
+
+   }
+   
+   .lastbutton{
+   
+    margin-top: -50px;
+    color: white;
+    background-color: blue;
+    width:250px;
+    margin-left: -80px;
+    height: fit-content;
+    border-radius: 7px;
+    padding:8px;
+    border:none;
+
+   }
+   .visaimage{
+   
+    width:70px;
+    height: 42px;
+    margin-top: 20px;
+   }
+   .last{
+    border:black solid 2px;
+    height: 45px;
+    margin-top:95px;
+    margin-left: 260px;
+    padding-left: 10px;
+    margin-right: 30px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    width:900px;
+   }
+   
+
+ .boxcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: fit-content;
+    margin-top:9px;
+    position: relative;
+    left: 60px;
+    gap: 2px;
+    font-size: small;
+
+    
+ }
+ .box1{
+    width: 910px;
+    height:50px;
+    background-color:white;
+    border-radius: 2px;
+    padding-left: 20px;
+    font-size:large;
+    padding-top:-90px;
+
+ }
+ .box2{
+    display: flex;
+    width: 910px;
+    height: fit-content;
+    background-color: rgb(202, 202, 202);
+    gap:90px;
+    padding-left: 20px;
+    border-radius: 2px;
+    color: gray;
+ }
+ .box2 ul{
+    display: flex;
+    gap: 40px;
+    padding-left: 10px;
+    
+    
+ }
+ .box2 li{
+    display: flex;
+    list-style-type: none;
+    width: 125px;
+     
+ }
+ .box3{
+    display: flex;
+    width: 910px;
+    height:40px;
+    background-color: white;
+    gap: 50px;
+    padding-left: 20px;
+    border-radius: 2px;
+ }
+    
+ .box3 ul{
+    display: flex;
+    gap: 40px;
+     
+ }
+ .box3 li{
+    display: flex;
+    list-style-type: none;
+    width: 125px;
+     
+    
+
+ }
+ .paidbutton{
+ 
+    height:20px;
+    font-size: small;
+   
+    color: green;
+    background-color:lightgreen;
+    border: none;
+    border-radius: 3px;
+ }
+ .fa-signal{
+    padding-right:  10px;
+    border:black;
+     
+    margin-top: 10px;
+    padding-top: 10px;
+    width:20px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: -20px;
+    border-radius:10px;
+     }
+ 
+ .pink{
+    margin-top: 20px;
+    margin-left: -20px;
+ }
+ .peryear{
+    font-size: larger;
+    font-weight: bolder;
+ }
+ .word{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 5px;
+     
+     
+ }
+ .word p{
+     line-height: 20px;
+    gap: 10px;
+ }
+ .tik{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+ }
+ .tik p{
+    display: flex;
+    gap: 8px;
+    
+ }
+ .tik i{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+ }
+ .buttons{
+    display: flex;
+    height:45px;
+    gap: 30px;
+    justify-content: center;
+ }
+ .word span{
+    font-size:xx-large;
+ }
+ .buttons button{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30px;
+    gap: 10px;
+    padding-left:10px;
+    margin-top: 10px;
+
+ }
+   .api1{
+        font-size:13px;
+        color:gray;
+        margin-left:40px;
+        margin-top: -37px;
+    }
+    .number3{
+        margin-top:-13px;
+        font-weight: bold;
+        margin-left:40px;
+    }
+    .fa-user-o{
+        margin-top:4px;
+    }
+    
+    .save{
+        background-color: blue;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        margin-left: 20px;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        width:100px;
+    }
+    .top{
+        width: 55%;
+        border: none;
+        margin-right: -39px;  
+        border-radius: 10px;
+    }
+    .three3{
+        margin-top: 4px;
+        margin-left: -3px;
+    }
+    .none{
+        background-color: transparent;
+        color: black;
+    }
+ 
+</style>
+
+<body style="background-color: rgb(245, 245, 245);">
+    <aside class="left">
+    <div class="background">
+    <div class="div1">
+        <p><i class="fa fa-bolt" aria-hidden="true"></i></p>
+        <p style="color:blueviolet ; margin-top:24px ;" ><b>cleaver</b></p><br>
+    </div>
+    <div class="div2">
+    <i class="fa fa-home" aria-hidden="true"></i>
+    <p style=margin-top:3px;>dashboard</p>
+    </div>
+    <div class="div3">
+    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+    <p style=margin-top:2px;>Analytics</p>
+    </div>
+    <div class="div4">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+    <p style=margin-top:2px;>messages</p>
+    <button class="but1">6</button>
+    </div>
+    <div class="div5">
+    <i class="fa fa-clone" aria-hidden="true"></i>
+    <p style=margin-top:2px;>collections</p>
+    </div>
+    <div class="div6">
+    <i class="fa fa-user-circle" aria-hidden="true"></i>
+    <p style=margin-top:2px;>users</p>
+    </div> 
+    <div class="div9">
+        <hr></div>
+    <div class="div7">
+    <i class="fa fa-cogs" aria-hidden="true"></i>
+    <p style=margin-top:2px;>settings</p>
+    </div>
+    <div class="div8">
+    <i class="fa fa-bell" aria-hidden="true"></i>
+    <p style=margin-top:2px;>Notifications</p>
+    <button class="but2">63</button>
+    </div>
+   
+</div>
+</aside>
+
+<div class="first">
+    
+    <div class="edit">  
+        <image class="image" src="data:image/jpeg;base64,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"></image>  
+        <h2 class="marie">Marie claire</h2>
+        <div class="edit1">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <p class="one">Edit profile</p>
+            <i class="fa fa-check"  style="padding:1px;padding-left:5px;border-radius: 50%; font-size: small;margin-top: 13px;padding-top: 5px;"aria-hidden="true"></i> 
+            <p class="two">verified</p>
+        </div>
+    </div>
+    <div class="one1">
+    <button class="b1" > <i style="margin-top:5px;"class="fa fa-signal" aria-hidden="true"></i>Insights</button>
+    <button class="b2"> <i class="fa fa-plus" aria-hidden="true"></i>New post</button>
+</div>
+   </div>
+
+<div class="container">
+<div class="card">
+     
+     <p> Current supscruption plan</p>
+     <h1 class="letter1">PRO</h1>
+     <p>Need extra features?</p>
+     <button class="letter2">Upgrade</button>
+</div>
+<div class="small">
+    <i class="fa fa-signal" style="background-color: pink;" aria-hidden="true"></i>
+    <div><p class="api">API used</p>
+    <p class="number">2.5.800 of 10.000</p></div>
+    
+</div>
+<div class="big">
+     <div class="word">
+        <p style="color:grey">You purpose plan<br><b style="color: black;font-weight: bolder;font-size: larger;">Developer</b></p>
+        <p><span style="font-size: xx-large;">$59</span>    per year</p>
+     </div>
+     <div class="tik">
+        <p><i class="fa fa-check"  style="padding: 2px; border-radius: 70%; font-size: small;"aria-hidden="true"></i>    5 users</p>
+        <p><i class="fa fa-check"  style="padding: 2px; border-radius: 70%; font-size: small;"aria-hidden="true"></i>    Dedicated support</p>
+     </div>
+     <div class="buttons">
+        <button class="top"><i class="fa fa-user-o" aria-hidden="true"></i><div class="three3" >3</div></button>
+        <button class="save">save</button>
+     </div>
+</div> 
+<div class="small1">
+    <i class="fa fa-signal" aria-hidden="true" style="color: green; background-color: rgb(157, 240, 157);"></i>
+    <div><p class="api1">Your plan will reneve</p>
+    <p class="number3">12.20.24</p></div>
+    
+ </div> 
+ </div>
+  
+</div>
+<div class="side">
+    <div class="big2">
+    <div class="payment1">
+    <p class="payment">payment methods</p>
+    <p class="edits"><b>Edits</b></p>
+    </div>
+     <div class="visa">
+    <image class="visaimage" src="https://www.visa.co.in/dam/VCOM/regional/na/us/partner-with-us/images/visa-card-business-chip-724x456.jpg"></image>
+    <div class="visadeatials"><p>Visa:<b>5432</b><br>Exp.date:<b>12/24</b></p></div>
+    </div>
+    <div class="mastercard">
+    <image class="mastercardimage" src="data:image/png;base64,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"></image>
+    <div class="mastercarddeatials"><p>Mastercard:<b>4291</b><br>Exp.date:<b>12/24</b></p></div>
+    </div>
+    <button class="lastbutton">Update payment method</button>
+    </div>
+ </div>
+ 
+<div class="boxcontainer">
+    <div class="box1">
+        <h5 style="margin-top:16px;font-size: large;">Orders</h5>
+    </div>
+    <div class="box2">
+        <p>INVOICE</p>
+        <ul>
+             
+            <li>DATE</li>
+            <li>AMOUNT</li>
+            <li>PAYMENT METHOD</li>
+            <li>HEADER</li>
+            <li>HEADER</li>
+        </ul>
+    </div>
+    <div class="box3">
+        <p style="color:blue">InvoiceA/10</p>
+        <ul>
+            
+            <li>Mar 15,2020</li>
+            <li><b>$143,00</b></li>
+            <li><i class="fa fa-id-card-o" aria-hidden="true"></i>****4231</li>
+            <li><button class="paidbutton">PAID</button></li>
+            <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+    <div class="box3">
+        <p style="color:blue">InvoiceA/09</p>
+        <ul>
+            
+            <li>Feb 15,2020</li>
+            <li><b>$439,00</b></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>****4231</li>
+            <li><button class="paidbutton">PAID</button></li>
+            <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+    <div class="box3">
+        <p style="color:blue">InvoiceA/08</p>
+        <ul>
+            
+            <li>Jan 10,2020</li>
+            <li><b>$123,00</b></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>****4231</li>
+            <li><button class="paidbutton">PAID</button></li>
+            <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+    <div class="box3">
+        <p style="color:blue">InvoiceA/07</p>
+        <ul>
+            
+            <li>Dec 15,2019</li>
+            <li><b>$49,00</b></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>****4231</li>
+            <li><button class="paidbutton">PAID</button></li>
+            <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+    <div class="box3">
+        <p style="color:blue">InvoiceB/02</p>
+        <ul>
+            
+            <li>Dec 15,2019</li>
+            <li><b>$49,00</b></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>****4231</li>
+            <li><button class="paidbutton">PAID</button></li>
+            <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+    <div class="box3">
+        <p style="color:blue">InvoiceB/01</p>
+        <ul>
+            
+            <li>Dec 01,2019</li>
+            <li><b>$150,00</b></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>****4231</li>
+            <li><button class="paidbutton">PAID</button></li>
+            <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
